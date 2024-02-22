@@ -11,6 +11,6 @@ public class Circle implements IShape {
 
     @Override
     public int compareTo(IShape o) {
-        return (int) (this.area() - o.area());
+        return Double.compare(this.area(), o.area());
     }
 }
